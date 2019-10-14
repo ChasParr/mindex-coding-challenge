@@ -1,0 +1,5 @@
+<ul class="employee-list">
+  <li *ngFor="let emp of employees">
+    <app-employee [employee]="emp" (notifyEdit)="openDialog('edit', $event)" (notifyDel)="openDialog('del', $event)"></app-employee>
+  </li>
+</ul>

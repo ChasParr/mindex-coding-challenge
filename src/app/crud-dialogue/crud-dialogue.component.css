@@ -1,0 +1,22 @@
+
+
+label {
+    display:block;
+}
+input {
+    margin:5px 0px;
+    padding:2px;
+}
+button {
+    float: right;
+    margin: 7px 3px;
+    padding: 5px 6px;
+    border: none;
+    background-color: white;
+}
+button:hover {
+    background-color: lightgray;
+}
+h3 {
+    margin: 0 0 1em 0;
+}

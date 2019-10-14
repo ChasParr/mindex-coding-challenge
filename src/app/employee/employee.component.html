@@ -1,0 +1,19 @@
+<mat-card class="employee">
+  <mat-card-header>
+    <mat-card-title>{{employee.lastName}}, {{employee.firstName}}</mat-card-title>
+    <mat-card-subtitle>{{employee.position}}</mat-card-subtitle>
+    <mat-card-subtitle>ID: {{employee.id}} | Total Reports: {{all_subordinates}}</mat-card-subtitle>
+      <!--total subordinates-->
+  </mat-card-header>
+  <mat-card-content >
+    <h4 [ngClass]="hideReports()">Direct Reports</h4>
+    <!-- rows of subordinates -->
+    <ul class="direct-reports-list">
+        <li *ngFor="let rep of directReports">
+            <button (click)="deleteReport(rep)" class="delButton">delete</button>
+            <button (click)="editReport(rep)" class="editButton">edit</button>
+            <p>{{rep.firstName}} {{rep.lastName}}</p>
+        </li>
+    </ul>
+  </mat-card-content>
+</mat-card>

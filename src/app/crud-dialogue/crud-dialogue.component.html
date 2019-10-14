@@ -1,0 +1,29 @@
+<div id="crud-modal-container">
+    <div id="edit-form" [ngClass]="hideEdit()">
+        <label>
+            First Name<br/>
+        <input type="text" [formControl]="firstName">
+        </label>
+        <label>
+            Last Name<br/>
+            <input type="text" [formControl]="lastName">
+        </label>
+        <label>
+            Title<br/>
+            <input type="text" [formControl]="position">
+        </label>
+        <label>
+            Compensation<br/>
+            <input type="number" [formControl]="compensation">
+        </label>
+        <button mat-dialog-close>Cancel</button>
+        <button (click)="save(data.employee)">Save</button>
+    </div>
+    <div id="del-confirm" [ngClass]="hideDel()">
+        <h3>Delete Employee</h3>
+        <p>Permanently delete employee {{data.employee.firstName}} {{data.employee.lastName}}?</p>
+        <p>This cannot be undone.</p>
+        <button mat-dialog-close>Cancel</button>
+        <button (click)="delete(data.employee)">OK</button>
+    </div>
+</div>

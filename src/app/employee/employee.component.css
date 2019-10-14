@@ -1,0 +1,22 @@
+.mat-card {
+    margin:10px;
+    padding:10px;
+}
+button {
+    float: right;
+    margin: 7px 3px;
+    padding: 5px 6px;
+    border: none;
+    background-color: white;
+}
+button:hover {
+    background-color: lightgrey;
+}
+
+li {
+    margin:5px;
+    box-shadow: 0px 0px 1px black;
+}
+p {
+    padding: 12px;
+}
